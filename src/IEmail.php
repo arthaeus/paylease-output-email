@@ -1,5 +1,5 @@
 <?php
 
-namespace IEmail;
+namespace Output;
 
 interface IEmail {}
