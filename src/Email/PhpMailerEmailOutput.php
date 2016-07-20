@@ -2,7 +2,7 @@
 
 namespace Output;
 
-abstract class EmailOutput implements IOutput, IEmail, \SPLObserver
+class PhpMailerEmailOutput extends EmailOutput implements IOutput, IEmail , \SPLObserver
 {
 
     protected $emailer = null;
@@ -25,10 +25,7 @@ abstract class EmailOutput implements IOutput, IEmail, \SPLObserver
         $this->output( $messageObj );
     }
 
-    /**
-     * implement this function based on the emailer library that you are using
-     */
-    abstract public function output( \stdClass $output );
-
-
+    public function output( \stdClass $output )
+    {
+    }
 }
