@@ -15,6 +15,6 @@ class EmailOutput implements IOutput, \SPLObserver
 
     public function output( \stdClass $output )
     {
-        echo $output->message;
+        echo "will email " . $output->message;
     }
 }
