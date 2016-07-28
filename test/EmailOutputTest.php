@@ -1,14 +1,14 @@
 <?php
 
 require __DIR__.'/../vendor/autoload.php';
-use Output\EmailOutput as EmailOutput;
+use Output\PhpMailerEmailOutput as PhpMailerEmailOutput;
 
 class EmailOutputTest extends PHPUnit_Framework_TestCase
 {
 
     public function testEmailOutput()
     {
-        $screenOutput = new EmailOutput();
+        $emailOutput = new PhpMailerEmailOutput();
         $this->assertEquals(1,1);
     }
 }
